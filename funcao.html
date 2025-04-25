@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+
+
+    <script>
+
+        //Dois tipos de função a do tipo void que não retorna nada
+        //e a de retorno que faz o retorno de alguma informação
+
+        function calcularAreaTerreno(largura, comprimento) { //O interpretador do Java le primeiro as function
+
+            //lógica
+            var area = largura * comprimento
+
+            return area
+
+        }
+
+        //Dessa forma ele fica dinamico
+        var largura = prompt('Digite a largura do terreno em metros')
+        var comprimento = prompt('Digite o comprimento do terreno em metros')
+
+        var area = calcularAreaTerreno(largura, comprimento)
+
+        document.write('O terreno possui ' + area + ' metros quadrados')
+
+        //também pode ser assim, mas com a váriavel fica melhor
+        // document.write('O terreno possui ' + calcularAreaTerreno(15, 25) + 'metros quadrados')
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
