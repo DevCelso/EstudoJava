@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+
+
+    <script>
+
+        var num1 = prompt('Digite o primeiro número para o cálculo')
+        var operacao = prompt('Digite Soma ou Subtração para calcular')
+        var num2 = prompt('Digite o segundo número para o cálculo')
+
+        function calculadora(num1, num2, operacao) {
+
+            //Converte uma string em um número de ponto flutuante 
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            var resultado = 0
+
+            //lógica
+            if (operacao == 'Soma') {
+                resultado = num1 + num2
+            } else {
+                resultado = num1 - num2
+            }
+
+            return resultado
+
+        }
+
+        document.write('O resultado é: ' + calculadora(num1, num2, operacao))
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
